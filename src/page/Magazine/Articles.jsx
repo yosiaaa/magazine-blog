@@ -29,8 +29,8 @@ export default function Articles() {
 
   return (
     <>
-      <div className="flex px-20 justify-between items-center pb-16.75">
-        <span className="text-base font-semibold uppercase leading-none">
+      <div className="flex px-6 lg:px-20 justify-center lg:justify-between items-center pb-7 lg:pb-16.75">
+        <span className="text-base hidden lg:flex font-semibold uppercase leading-none">
           Categories
         </span>
         <div className="flex gap-3 items-center">
@@ -60,7 +60,7 @@ export default function Articles() {
           />
         </div>
       </div>
-      <div className="flex flex-col px-20 pb-48 gap-24">
+      <div className="flex flex-col px-6 pb-7 gap-7 lg:px-20 lg:pb-48 lg:gap-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-3">
           {filteredItems.map((item) => {
             return (

@@ -82,6 +82,7 @@ export default function AuthorsPostDetails({
         <div className="grid lg:grid-cols-2 gap-5 lg:gap-0">
           {data.articleCreated.map((article) => (
             <CardAuthor
+              id={article.id}
               key={article.id}
               title={data.title}
               date={article.date}
