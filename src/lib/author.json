@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Jakob Gronberg",
+    "job": "Artist",
+    "city": "Berlin",
+    "image": "jakob-gronberg"
+  },
+  {
+    "id": 2,
+    "title": "Louise Jensen",
+    "job": "Artist",
+    "city": "Stockholm",
+    "image": "louise-jensen"
+  },
+  {
+    "id": 3,
+    "title": "Anne Henry",
+    "job": "Photograph",
+    "city": "New York",
+    "image": "anne-henry"
+  },
+  {
+    "id": 4,
+    "title": "Anne Nielsen",
+    "job": "Columnist",
+    "city": "Copenhagen",
+    "image": "anne-nielsen"
+  },
+  {
+    "id": 5,
+    "title": "Jane Cooper",
+    "job": "Artist",
+    "city": "Berlin",
+    "image": "jane-cooper"
+  },
+  {
+    "id": 6,
+    "title": "Cristofer Vaccaro",
+    "job": "Artist",
+    "city": "Lisbon",
+    "image": "cristofer-vaccaro"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "icon": "spotify"
+  },
+  {
+    "id": 2,
+    "icon": "applemusic"
+  },
+  {
+    "id": 3,
+    "icon": "soundcloud"
+  }
+]

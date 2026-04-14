@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "instagram",
+    "href": "https://instagram.com",
+    "icon": "instagram",
+    "color": "white"
+  },
+  {
+    "id": 2,
+    "name": "X",
+    "href": "https://x.com",
+    "icon": "x",
+    "color": "white"
+  },
+  {
+    "id": 3,
+    "name": "yotuube",
+    "href": "https://youtube.com",
+    "icon": "youtube",
+    "color": "white"
+  },
+  {
+    "id": 4,
+    "name": "facebook",
+    "href": "https://facebook.com",
+    "icon": "facebook",
+    "color": "white"
+  }
+]

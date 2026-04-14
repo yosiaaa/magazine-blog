@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "title": "Save the world from ourselves!",
+    "date": "16.06.2026",
+    "duration": "1h 20 Min",
+    "image": "podcast-1",
+    "episode": "Episode 01",
+    "musicMedia": "spotify",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.",
+    "paragraph": "Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam. Tellus orci ac auctor augue mauris augue neque gravida. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Duis convallis convallis tellus id interdum velit laoreet id. Vulputate mi sit amet mauris commodo quis. Semper viverra nam libero justo laoreet sit amet. Eget nullam non nisi est sit. Nibh cras pulvinar mattis nunc sed blandit libero. Ac felis donec et odio pellentesque diam volutpat. Quis varius quam quisque id diam vel quam elementum. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Id diam vel quam elementum pulvinar etiam non. Non consectetur a erat nam at lectus urna duis convallis.",
+    "quotes": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "quotesBy": "Nelson Mandela",
+    "name": "instagram",
+    "href": "https://instagram.com",
+    "icon": "instagram",
+    "color": "white",
+    "writer": "Jakob Gronberg",
+    "job": "Artist",
+    "city": "Berlin",
+    "avatar": "jakob-gronberg",
+    "articleCreated": [
+      {
+        "id": 1,
+        "title": "How to Save the World",
+        "image": "article-1",
+        "date": "20.06.2026",
+        "read": "5 min read",
+        "writer": "Jakob Gronberg"
+      },
+      {
+        "id": 2,
+        "title": "Climate Change Awareness",
+        "image": "article-2",
+        "date": "22.06.2026",
+        "read": "7 min read",
+        "writer": "Jakob Gronberg"
+      },
+      {
+        "id": 3,
+        "title": "Future of Humanity",
+        "image": "article-3",
+        "date": "25.06.2026",
+        "read": "6 min read",
+        "writer": "Jakob Gronberg"
+      },
+      {
+        "id": 4,
+        "title": "Future of Dream",
+        "image": "article-3",
+        "date": "25.06.2026",
+        "read": "6 min read",
+        "writer": "Jakob Gronberg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Problem of today's cultural development",
+    "date": "16.06.2026",
+    "duration": "1h 20 Min",
+    "image": "podcast-2",
+    "episode": "Episode 02",
+    "musicMedia": "spotify",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.",
+    "paragraph": "Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam. Tellus orci ac auctor augue mauris augue neque gravida. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Duis convallis convallis tellus id interdum velit laoreet id. Vulputate mi sit amet mauris commodo quis. Semper viverra nam libero justo laoreet sit amet. Eget nullam non nisi est sit. Nibh cras pulvinar mattis nunc sed blandit libero. Ac felis donec et odio pellentesque diam volutpat. Quis varius quam quisque id diam vel quam elementum. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Id diam vel quam elementum pulvinar etiam non. Non consectetur a erat nam at lectus urna duis convallis.",
+    "quotes": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "quotesBy": "Nelson Mandela",
+    "name": "X",
+    "href": "https://x.com",
+    "icon": "x",
+    "color": "white",
+    "writer": "Louise Jensen",
+    "job": "Artist",
+    "city": "Berlin",
+    "avatar": "louise-jensen",
+    "articleCreated": [
+      {
+        "id": 1,
+        "title": "How to Save the World",
+        "image": "article-1",
+        "date": "20.06.2026",
+        "read": "5 min read",
+        "writer": "Louise Jensen"
+      },
+      {
+        "id": 2,
+        "title": "Climate Change Awareness",
+        "image": "article-2",
+        "date": "22.06.2026",
+        "read": "7 min read",
+        "writer": "Louise Jensen"
+      },
+      {
+        "id": 3,
+        "title": "Future of Humanity",
+        "image": "article-3",
+        "date": "25.06.2026",
+        "read": "6 min read",
+        "writer": "Louise Jensen"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "The Problem of today's cultural development",
+    "date": "16.06.2026",
+    "duration": "1h 20 Min",
+    "image": "podcast-3",
+    "episode": "Episode 03",
+    "musicMedia": "spotify",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.",
+    "paragraph": "Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam. Tellus orci ac auctor augue mauris augue neque gravida. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Duis convallis convallis tellus id interdum velit laoreet id. Vulputate mi sit amet mauris commodo quis. Semper viverra nam libero justo laoreet sit amet. Eget nullam non nisi est sit. Nibh cras pulvinar mattis nunc sed blandit libero. Ac felis donec et odio pellentesque diam volutpat. Quis varius quam quisque id diam vel quam elementum. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Id diam vel quam elementum pulvinar etiam non. Non consectetur a erat nam at lectus urna duis convallis.",
+    "quotes": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "quotesBy": "Nelson Mandela",
+    "writer": "Anne Henry",
+    "job": "Artist",
+    "city": "Berlin",
+    "avatar": "anne-henry",
+    "articleCreated": [
+      {
+        "id": 1,
+        "title": "How to Save the World",
+        "image": "article-1",
+        "date": "20.06.2026",
+        "read": "5 min read",
+        "writer": "Anne Henry"
+      },
+      {
+        "id": 2,
+        "title": "Climate Change Awareness",
+        "image": "article-2",
+        "date": "22.06.2026",
+        "read": "7 min read",
+        "writer": "Anne Henry"
+      },
+      {
+        "id": 3,
+        "title": "Future of Humanity",
+        "image": "article-3",
+        "date": "25.06.2026",
+        "read": "6 min read",
+        "writer": "Anne Henry"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "The Problem of today's cultural development",
+    "date": "16.06.2026",
+    "duration": "1h 20 Min",
+    "image": "podcast-3",
+    "episode": "Episode 03",
+    "musicMedia": "spotify",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.",
+    "paragraph": "Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam. Tellus orci ac auctor augue mauris augue neque gravida. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Duis convallis convallis tellus id interdum velit laoreet id. Vulputate mi sit amet mauris commodo quis. Semper viverra nam libero justo laoreet sit amet. Eget nullam non nisi est sit. Nibh cras pulvinar mattis nunc sed blandit libero. Ac felis donec et odio pellentesque diam volutpat. Quis varius quam quisque id diam vel quam elementum. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Id diam vel quam elementum pulvinar etiam non. Non consectetur a erat nam at lectus urna duis convallis.",
+    "quotes": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "quotesBy": "Nelson Mandela",
+    "writer": "Anne Nielsen",
+    "job": "Artist",
+    "city": "Berlin",
+    "avatar": "anne-nielsen",
+    "articleCreated": [
+      {
+        "id": 1,
+        "title": "How to Save the World",
+        "image": "article-1",
+        "date": "20.06.2026",
+        "read": "5 min read",
+        "writer": "Anne Henry"
+      },
+      {
+        "id": 2,
+        "title": "Climate Change Awareness",
+        "image": "article-2",
+        "date": "22.06.2026",
+        "read": "7 min read",
+        "writer": "Anne Henry"
+      },
+      {
+        "id": 3,
+        "title": "Future of Humanity",
+        "image": "article-3",
+        "date": "25.06.2026",
+        "read": "6 min read",
+        "writer": "Anne Henry"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "navigate": "Magazine",
+    "href": "/magazine"
+  },
+  {
+    "id": 2,
+    "navigate": "Authors",
+    "href": "/authors"
+  },
+  {
+    "id": 3,
+    "navigate": "Podcast",
+    "href": "/podcast"
+  }
+]
