@@ -6,6 +6,7 @@ import socialmedia from "../lib/sociamedia.json";
 import { RiMenu5Fill } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import { RiCloseFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const socmedMap = {
   instagram: RiInstagramLine,
@@ -40,24 +41,24 @@ export default function Header() {
     <>
       <header className="flex flex-col px-6 lg:px-20 pt-6 lg:pb-12">
         <div className="flex w-full pb-2 lg:pb-5 justify-between items-center">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-base whitespace-nowrap md:whitespace-normal lg:text-2xl font-bold uppercase font-inter items-start"
           >
             Aisoy Magazine
-          </a>
+          </Link>
           <div className="flex gap-4 items-center">
             <div className="hidden lg:flex gap-6 items-end">
               <ul className="flex gap-6 items-center">
                 {navigation.map((item) => (
                   <li key={item.id}>
-                    <a
+                    <Link
                       className="font-inter font-medium text-xl relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
-                      href={item.href}
+                      to={item.href}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.navigate}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
