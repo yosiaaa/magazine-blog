@@ -41,6 +41,7 @@ export default function PostMagazine({
   descAuthor,
   quotes,
   quotesBy,
+  id,
 }) {
   return (
     <>
@@ -152,22 +153,25 @@ export default function PostMagazine({
           </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3">
-          {articleData.map((item) => {
-            return (
-              <div key={item.id} className="cursor-pointer">
-                <CardMagazine
-                  key={item.id}
-                  date={item.date}
-                  desc={item.desc}
-                  titleMagazine={item.title}
-                  category={item.category}
-                  writer={item.writer}
-                  duration={item.duration}
-                  image={imageMap[item.image]}
-                />
-              </div>
-            );
-          })}
+          {articleData
+            .filter((item) => item.id !== id) // filtering and hide card with same id on page details on view.
+            .map((item) => {
+              return (
+                <div key={item.id} className="cursor-pointer">
+                  <CardMagazine
+                    key={item.id}
+                    id={item.id}
+                    date={item.date}
+                    desc={item.desc}
+                    titleMagazine={item.title}
+                    category={item.category}
+                    writer={item.writer}
+                    duration={item.duration}
+                    image={imageMap[item.image]}
+                  />
+                </div>
+              );
+            })}
         </div>
       </div>
     </>
