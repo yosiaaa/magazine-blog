@@ -4,7 +4,9 @@ import { RiArrowRightLongLine, RiArrowLeftLongLine } from "react-icons/ri";
 export default function ButtonWithArrow({ title, href }) {
   const location = useLocation();
 
-  const isGoBack = title.toLowerCase().includes("go back");
+  const isGoBack =
+    title.toLowerCase().includes("go back") ||
+    title.toLowerCase().includes("previous");
 
   const goBack = location.pathname.startsWith("/magazine")
     ? "/magazine"

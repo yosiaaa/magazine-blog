@@ -35,6 +35,7 @@ export default function Author() {
           return (
             <CardAuthor
               key={item.id}
+              id={item.id}
               author={item.title}
               city={item.city}
               job={item.job}

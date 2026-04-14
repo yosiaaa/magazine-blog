@@ -9,6 +9,7 @@ import festival from "../../assets/street-art-festival.png";
 import eyes from "../../assets/through-the-eyes-of-street-artist.png";
 import ButtonWithArrow from "../../components/ButtonWithArrow";
 import ButtonCustom from "../../components/ButtonCustom";
+import Pagination from "../../components/Pagination";
 
 const imageMap = {
   "article-1": dies,
@@ -21,11 +22,20 @@ const imageMap = {
 
 export default function Articles() {
   const [filter, setFilter] = useState("All");
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 3;
   const filteredItems = useMemo(() => {
     return filter === "All"
       ? articleData
       : articleData.filter((item) => item.category === filter);
   }, [filter]);
+
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+
+  const paginatedItems = useMemo(() => {
+    const startIndex = (page - 1) * itemsPerPage;
+    return filteredItems.slice(startIndex, startIndex + itemsPerPage);
+  }, [filteredItems, page]);
 
   return (
     <>
@@ -62,7 +72,7 @@ export default function Articles() {
       </div>
       <div className="flex flex-col px-6 pb-7 gap-7 lg:px-20 lg:pb-48 lg:gap-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-3">
-          {filteredItems.map((item) => {
+          {/* {filteredItems.map((item) => {
             return (
               <CardMagazine
                 key={item.id}
@@ -76,10 +86,28 @@ export default function Articles() {
                 image={imageMap[item.image]}
               />
             );
-          })}
+          })} */}
+          {paginatedItems.map((item) => (
+            <CardMagazine
+              key={item.id}
+              id={item.id}
+              date={item.date}
+              desc={item.desc}
+              titleMagazine={item.title}
+              category={item.category}
+              writer={item.writer}
+              duration={item.duration}
+              image={imageMap[item.image]}
+            />
+          ))}
         </div>
         <div className="flex justify-end">
-          <ButtonWithArrow title="Next" />
+          <Pagination
+            page={page}
+            totalPages={totalPages}
+            onNext={() => setPage((prev) => Math.min(prev + 1, totalPages))}
+            onPrev={() => setPage((prev) => Math.max(prev - 1, 1))}
+          />
         </div>
       </div>
     </>
