@@ -45,42 +45,52 @@ export default function PostMagazine({
 }) {
   return (
     <>
-      <div className="flex px-20 py-24 gap-auto justify-between">
-        <h1 className="text-7xl text-wrap uppercase font-bold text-slate-900">
+      <div className="flex flex-col lg:flex-row px-6 py-12 lg:px-20 lg:py-24 gap-5 lg:gap-auto justify-between">
+        <h1 className="text-4xl lg:text-7xl text-center lg:text-left text-wrap uppercase font-bold text-slate-900">
           {title}
         </h1>
-        <p className="text-slate-600 text-balance leading-6 w-1/2">{desc}</p>
+        <p className="leading-5 text-slate-600 text-justify lg:leading-6 lg:w-1/2 lg:text-left">
+          {desc}
+        </p>
       </div>
-      <div className="flex px-20 justify-between pb-8">
+      <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row px-6 lg:px-20 justify-between pb-8">
         <div className="flex gap-5">
           <div className="flex gap-1">
-            <span className="text-slate-900 font-semibold text-lg">Writer</span>
-            <span className="text-slate-600 text-lg">{writer}</span>
+            <span className="text-slate-900 font-semibold text-sm lg:text-lg">
+              Writer
+            </span>
+            <span className="text-slate-600 text-sm whitespace-nowrap lg:text-lg">
+              {writer}
+            </span>
           </div>
           <div className="flex gap-1">
-            <span className="text-slate-900 font-semibold text-lg">Date</span>
-            <span className="text-slate-600 text-lg">{date}</span>
+            <span className="text-slate-900 font-semibold text-sm lg:text-lg">
+              Date
+            </span>
+            <span className="text-slate-600 text-sm whitespace-nowrap lg:text-lg">
+              {date}
+            </span>
           </div>
           <div className="flex gap-1">
-            <span className="text-slate-900 font-semibold text-lg">
+            <span className="text-slate-900 font-semibold text-sm lg:text-lg">
               Viewers
             </span>
-            <span className="text-slate-600 text-lg">{viewers}</span>
+            <span className="text-slate-600 text-sm lg:text-lg">{viewers}</span>
           </div>
         </div>
         <ButtonCustom label={category} />
       </div>
-      <div className="flex px-20 max-w-380 max-h-200 overflow-hidden">
+      <div className="flex px-6 lg:px-20 w-full lg:max-w-380 lg:h-200 overflow-hidden order-1 lg:order-3">
         <img
           src={image}
           alt={title}
-          className="object-contain w-full h-full justify-center"
+          className="object-cover w-full h-full justify-center"
         />
       </div>
-      <div className="flex pt-24 px-85 pb-48 gap-auto justify-between">
-        <div className="flex gap-16">
-          <div className="flex flex-col gap-8">
-            <div className="flex gap-4">
+      <div className="flex flex-col lg:flex-row gap-7 px-6 pb-7 py-12 lg:pt-24 lg:px-85 lg:pb-48 gap-auto justify-between">
+        <div className="flex gap-5 w-full lg:w-1/2 lg:gap-16">
+          <div className="flex flex-col gap-8 w-full">
+            <div className="flex gap-4 items-center">
               <img
                 src={avatar}
                 alt={writer}
@@ -124,29 +134,34 @@ export default function PostMagazine({
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 w-1/2">
-          <span className="text-slate-900 text-balance font-semibold text-xl">
+        <div className="flex flex-col gap-6 w-full lg:w-1/2">
+          <span className="text-slate-900 text-justify font-semibold text-sm lg:text-xl">
             {desc}
           </span>
-          <span className="text-slate-600 text-lg text-balance">
+          <span className="text-slate-600 text-sm lg:text-lg text-justify">
             {descAuthor}
           </span>
-          <div className="flex flex-col py-6 gap-5">
+          <div className="flex flex-col lg:py-6 gap-5">
             <Divider />
             <span className="text-4xl font-bold text-slate-900">
               &ldquo; {quotes}
             </span>
             <span className="text-sm text-slate-700">{quotesBy}</span>
+            <Divider />
           </div>
-          <span className="text-slate-900 font-semibold text-xl">{desc}</span>
-          <span className="text-slate-600 text-lg">{descAuthor}</span>
+          <span className="text-slate-900 font-semibold text-justify text-lg lg:text-xl">
+            {desc}
+          </span>
+          <span className="text-slate-600 text-justify text-sm lg:text-lg">
+            {descAuthor}
+          </span>
         </div>
       </div>
-      <div className="flex flex-col gap-24 px-20 w-full pb-24 justify-between">
-        <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-7 pb-12 lg:gap-24 px-6 lg:px-20 w-full lg:pb-24 justify-between">
+        <div className="flex flex-col gap-7 lg:gap-12">
           <Divider />
           <div className="flex justify-between items-center">
-            <h2 className="text-slate-900 font-bold text-8xl uppercase">
+            <h2 className="text-slate-900 font-bold text-4xl lg:text-8xl uppercase">
               Latest Post
             </h2>
             <ButtonWithArrow title="See All" href="/magazine" />

@@ -38,6 +38,7 @@ export default function AuthorsPost() {
       ) : (
         <AuthorsPostDetails
           data={data}
+          id={data.id}
           key={data.id}
           icon={data.icon}
           writer={data.writer}

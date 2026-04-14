@@ -77,7 +77,7 @@ export default function Header() {
                 );
               })}
             </div>
-            <div className="flex lg:hidden">
+            <div className="flex lg:hidden relative z-60">
               <button onClick={toggleMenu}>
                 {isOpen ? (
                   <RiCloseFill size={24} />
@@ -88,48 +88,52 @@ export default function Header() {
             </div>
           </div>
 
-          {isOpen && (
+          <div
+            className={`lg:hidden fixed inset-0 z-40 transition-opacity duration-300 ${
+              isOpen
+                ? "opacity-100 pointer-events-auto"
+                : "opacity-0 pointer-events-none"
+            } bg-black/40`}
+            onClick={() => setIsOpen(false)}
+          >
             <div
-              className="lg:hidden fixed inset-0 bg-black/40 z-40"
-              onClick={() => setIsOpen(false)}
+              className={`absolute top-0 left-0 w-full h-screen bg-white z-50 flex flex-col px-10 pt-24 transform transition-transform duration-300 ${
+                isOpen ? "translate-y-0" : "-translate-y-full"
+              }`}
+              onClick={(e) => e.stopPropagation()}
             >
-              <div
-                className="absolute top-0 left-0 w-full h-screen bg-white z-50 flex flex-col px-10 pt-24"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <ul className="flex flex-col gap-6">
-                  {navigation.map((item) => (
-                    <li key={item.id}>
-                      <Link
-                        to={item.href}
-                        onClick={() => setIsOpen(false)} // close on link click
-                        className="text-2xl font-semibold font-inter"
-                      >
-                        {item.navigate}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <ul className="flex flex-col gap-6">
+                {navigation.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      to={item.href}
+                      onClick={() => setIsOpen(false)} // close on link click
+                      className="text-2xl font-semibold font-inter"
+                    >
+                      {item.navigate}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
 
-                {/* Divider */}
-                <div className="my-8 h-px bg-gray-300"></div>
+              {/* Divider */}
+              <div className="my-8 h-px bg-gray-300"></div>
 
-                {/* Social */}
-                <div className="flex gap-5">
-                  {socialmedia.map((item) => {
-                    const Icon = socmedMap[item.icon];
-                    if (!Icon) return null;
+              {/* Social */}
+              <div className="flex gap-5">
+                {socialmedia.map((item) => {
+                  const Icon = socmedMap[item.icon];
+                  if (!Icon) return null;
 
-                    return (
-                      <Link key={item.id} to={item.href}>
-                        <Icon size={24} />
-                      </Link>
-                    );
-                  })}
-                </div>
+                  return (
+                    <Link key={item.id} to={item.href}>
+                      <Icon size={24} />
+                    </Link>
+                  );
+                })}
               </div>
             </div>
-          )}
+          </div>
         </div>
         <div className="border-t px-10 lg:px-0 flex border-gray-700"></div>
       </header>

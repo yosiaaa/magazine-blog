@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 export default function CardAuthor({
   image,
   coverArticle,
@@ -7,9 +9,14 @@ export default function CardAuthor({
   date,
   read,
   title,
+  id,
 }) {
+  const navigate = useNavigate();
   return (
-    <div className="flex gap-7 lg:gap-12 p-5 lg:p-8 border items-center">
+    <div
+      onClick={() => navigate(`/magazine/${id}`)}
+      className="flex gap-7 lg:gap-12 p-5 lg:p-8 border items-center"
+    >
       <div className="flex w-20 lg:w-20 lg:h-40 justify-center lg:justify-normal items-center">
         <img
           src={image || coverArticle}
