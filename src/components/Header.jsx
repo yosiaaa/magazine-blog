@@ -100,13 +100,13 @@ export default function Header() {
                 <ul className="flex flex-col gap-6">
                   {navigation.map((item) => (
                     <li key={item.id}>
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         onClick={() => setIsOpen(false)} // close on link click
                         className="text-2xl font-semibold font-inter"
                       >
                         {item.navigate}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
