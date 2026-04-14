@@ -19,6 +19,7 @@
     "job": "Artist",
     "city": "Berlin",
     "avatar": "jakob-gronberg",
+    "queu": "01",
     "articleCreated": [
       {
         "id": 1,
@@ -74,6 +75,7 @@
     "job": "Artist",
     "city": "Berlin",
     "avatar": "louise-jensen",
+    "queu": "02",
     "articleCreated": [
       {
         "id": 1,
@@ -117,6 +119,7 @@
     "job": "Artist",
     "city": "Berlin",
     "avatar": "anne-henry",
+    "queu": "03",
     "articleCreated": [
       {
         "id": 1,
@@ -145,7 +148,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "The Problem of today's cultural development",
     "date": "16.06.2026",
     "duration": "1h 20 Min",
@@ -160,6 +163,7 @@
     "job": "Artist",
     "city": "Berlin",
     "avatar": "anne-nielsen",
+    "queu": "04",
     "articleCreated": [
       {
         "id": 1,

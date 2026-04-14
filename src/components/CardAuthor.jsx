@@ -14,10 +14,10 @@ export default function CardAuthor({
   const navigate = useNavigate();
   return (
     <div
-      onClick={() => navigate(`/magazine/${id}`)}
-      className="flex gap-7 lg:gap-12 p-5 lg:p-8 border items-center"
+      onClick={() => navigate(`/authors/${id}`)}
+      className="flex gap-7 lg:max-full lg:gap-12 p-5 lg:p-8 border items-center cursor-pointer hover:bg-[#f5f5f5] hover:transition-all hover:duration-500"
     >
-      <div className="flex w-20 lg:w-20 lg:h-40 justify-center lg:justify-normal items-center">
+      <div className="flex w-20 h-20 lg:w-20 lg:h-20 justify-center lg:justify-normal items-center">
         <img
           src={image || coverArticle}
           alt={author}
@@ -25,7 +25,7 @@ export default function CardAuthor({
         />
       </div>
       <div className="flex gap-4 flex-col justify-between">
-        <span className="text-base whitespace-nowrap lg:text-3xl font-bold">
+        <span className="text-base text-wrap lg:text-xl font-bold">
           {author || title}
         </span>
         <div className="flex justify-between gap-8">

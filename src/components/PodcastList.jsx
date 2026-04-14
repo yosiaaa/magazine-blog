@@ -9,17 +9,15 @@ export default function PodcastList({
   id,
 }) {
   return (
-    <div className="flex flex-col lg:flex-row w-full gap-5 lg:gap-0 justify-between items-center">
-      <div className="flex flex-col lg:flex-row gap-5 w-full lg:gap-14 items-center">
-        <span className="text-slate-900 font-bold text-lg">{queu}</span>
-        <div className="flex w-full h-full overflow-hidden">
-          <img
-            src={image}
-            alt={title}
-            className="object-contain w-full h-full"
-          />
+    <div className="flex flex-col md:flex-row w-full gap-5 lg:gap-0 justify-between items-center">
+      <div className="flex flex-col md:flex-row gap-5 w-full lg:gap-14 items-center">
+        <span className="text-slate-900 font-bold text-lg self-start md:self-center">
+          {queu}
+        </span>
+        <div className="flex max-w-60 max-h-60 overflow-hidden">
+          <img src={image} alt={title} className="object-cover w-full h-full" />
         </div>
-        <span className="font-bold text-xl self-start lg:text-wrap lg:w-full text-slate-900 leading-none">
+        <span className="font-bold text-xl self-start md:self-center lg:text-wrap lg:w-full text-slate-900 leading-none">
           {title}
         </span>
       </div>

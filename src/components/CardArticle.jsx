@@ -18,7 +18,7 @@ export default function CardArticle({
       />
       <div className="flex flex-col gap-5 lg:gap-0 justify-between">
         <div className="flex flex-col">
-          <span className="text-slate-900 font-bold text-2xl lg:text-xl">
+          <span className="text-slate-900 font-bold text-center lg:text-left text-2xl lg:text-xl">
             {title}
           </span>
           <span className="text-slate-500 text-sm lg:text-lg text-justify lg:text-normal">

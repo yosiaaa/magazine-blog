@@ -21,7 +21,7 @@ export default function Podcast() {
           <h2 className="text-slate-900 font-bold text-3xl lg:text-8xl uppercase">
             Podcast
           </h2>
-          <ButtonWithArrow title="All Episodes" />
+          <ButtonWithArrow title="All Episodes" href="/podcast" />
         </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3">

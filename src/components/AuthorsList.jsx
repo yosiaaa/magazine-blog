@@ -2,7 +2,7 @@ import ButtonWithArrow from "./ButtonWithArrow";
 
 export default function AuthorsList({ queu, avatar, id, writer, job, city }) {
   return (
-    <div className="flex flex-col lg:flex-row w-full gap-5 lg:gap-0 justify-between">
+    <div className="flex flex-col md:flex-row w-full gap-5 lg:gap-0 justify-between">
       <div className="flex justify-between w-full lg:justify-normal lg:gap-14 items-center">
         <span className="text-slate-900 font-bold text-lg">{queu}</span>
         <div className="flex lg:w-60 lg:h-60 items-center">
@@ -12,7 +12,7 @@ export default function AuthorsList({ queu, avatar, id, writer, job, city }) {
           {writer}
         </span>
       </div>
-      <div className="flex w-full gap-14 lg:items-center lg:justify-end">
+      <div className="flex w-full gap-14 lg:items-center md:justify-end">
         <div className="hidden lg:flex gap-5">
           <span className="text-slate-900 font-bold text-sm">Job</span>
           <span className="text-slate-700 text-sm">{job}</span>
