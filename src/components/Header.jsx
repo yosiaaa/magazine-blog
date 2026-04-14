@@ -121,9 +121,9 @@ export default function Header() {
                     if (!Icon) return null;
 
                     return (
-                      <a key={item.id} href={item.href}>
+                      <Link key={item.id} to={item.href}>
                         <Icon size={24} />
-                      </a>
+                      </Link>
                     );
                   })}
                 </div>
