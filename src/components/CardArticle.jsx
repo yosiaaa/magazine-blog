@@ -10,13 +10,11 @@ export default function CardArticle({
   title,
 }) {
   return (
-    <div className="flex flex-col lg:flex-row gap-5 lg:gap-12">
-      <img
-        src={image}
-        alt={writer}
-        className="max-w-full max-h-auto lg:max-w-92.25 lg:max-h-[461.25px] object-cover"
-      />
-      <div className="flex flex-col gap-5 lg:gap-0 justify-between">
+    <div className="flex flex-col lg:flex-row gap-5 md:gap-1 lg:gap-12">
+      <div className="overflow-hidden lg:max-w-92.25 lg:max-h-[461.25px]">
+        <img src={image} alt={writer} className="w-full h-full object-cover" />
+      </div>
+      <div className="flex flex-col gap-5 w-full lg:gap-0 justify-between">
         <div className="flex flex-col">
           <span className="text-slate-900 font-bold text-center lg:text-left text-2xl lg:text-xl">
             {title}
@@ -26,7 +24,7 @@ export default function CardArticle({
           </span>
         </div>
         <div className="flex flex-col lg:flex-row gap-5 justify-between">
-          <div className="flex gap-5">
+          <div className="flex md:flex-wrap lg:flex gap-5">
             <div className="flex gap-2">
               <span className="font-bold text-xs whitespace-nowrap lg:text-base text-black font-inter">
                 Writer
@@ -52,7 +50,7 @@ export default function CardArticle({
               </span>
             </div>
           </div>
-          <button className="w-1/2 lg:w-normal rounded-xl border text-slate-600 border-slate-600 items-center px-3 font-inter">
+          <button className="max-w-full rounded-3xl border text-slate-600 border-slate-600 items-center px-3 py-2 font-inter">
             {category}
           </button>
         </div>

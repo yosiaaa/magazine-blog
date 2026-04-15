@@ -29,11 +29,11 @@ export default function LeadArticle() {
   return (
     <>
       <div className="flex flex-col px-6 lg:px-20 w-full pb-12 gap-12 items-center justify-center">
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-12">
-          <p className="uppercase font-inter text-xl text-center lg:text-start lg:text-7xl text-slate-900 font-bold">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-12 lg:items-center">
+          <p className="uppercase font-inter text-xl text-center lg:text-start text-wrap lg:text-9xl text-slate-900 font-bold">
             Don&apos;t close your eyes
           </p>
-          <div className="flex flex-col gap-6 lg:gap-16 lg:pb-13">
+          <div className="flex flex-col gap-6 lg:gap-">
             <span className="text-sm lg:text-base text-justify lg:text-start">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -76,9 +76,9 @@ export default function LeadArticle() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-7 px-6 lg:px-20 lg:gap-24">
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-24">
-          <div className="flex flex-col lg:flex gap-12 justify-between items-center">
+      <div className="flex flex-col gap-7 px-6 lg:px-20 lg:gap-24 w-full">
+        <div className="flex flex-col md:flex-row md:justify-between gap-24">
+          <div className="flex flex-col lg:flex gap-12 lg:justify-between items-center">
             {/* left section */}
             {article.map((item, i) => {
               return (
@@ -97,7 +97,7 @@ export default function LeadArticle() {
                     category={item.category}
                   />
                   {i !== 5 && (
-                    <div className="border-b w-full pt-5 lg:pt-12 border-slate-900"></div>
+                    <div className="border-b lg:flex hidden max-w-full pt-5 lg:pt-12 border-slate-900"></div>
                   )}
                 </div>
               );

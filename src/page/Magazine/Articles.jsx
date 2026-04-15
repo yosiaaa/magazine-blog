@@ -70,23 +70,8 @@ export default function Articles() {
           />
         </div>
       </div>
-      <div className="flex flex-col px-6 pb-7 gap-7 lg:px-20 lg:pb-48 lg:gap-24">
+      <div className="flex flex-col px-6 gap-7 lg:px-20 pb-7">
         <div className="grid md:grid-cols-2 lg:grid-cols-3">
-          {/* {filteredItems.map((item) => {
-            return (
-              <CardMagazine
-                key={item.id}
-                id={item.id}
-                date={item.date}
-                desc={item.desc}
-                titleMagazine={item.title}
-                category={item.category}
-                writer={item.writer}
-                duration={item.duration}
-                image={imageMap[item.image]}
-              />
-            );
-          })} */}
           {paginatedItems.map((item) => (
             <CardMagazine
               key={item.id}

@@ -19,13 +19,14 @@ const authorMap = {
 export default function Hero() {
   return (
     <div className="flex flex-col w-full gap-12 lg:gap-0 px-6 pt-10 lg:pt-0 lg:px-20 items-center">
-      <h1 className="uppercase font-inter font-bold text-5xl lg:text-[250px]">
+      <h1 className="uppercase font-inter font-bold text-5xl lg:text-9xl 2xl:text-[250px]">
         Authors
       </h1>
       {podcastData.map((item, i) => {
         return (
           <div key={item.id} className="flex flex-col gap-5 lg:gap-0 w-full">
             <AuthorsList
+              queu={item.queu}
               key={item.id}
               id={item.id}
               city={item.city}
