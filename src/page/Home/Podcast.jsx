@@ -28,6 +28,7 @@ export default function Podcast() {
         {podcastData.map((item) => {
           return (
             <CardPodcast
+              id={item.id}
               key={item.id}
               title={item.title}
               duration={item.duration}
