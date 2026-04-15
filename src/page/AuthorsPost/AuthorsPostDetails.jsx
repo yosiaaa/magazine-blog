@@ -40,6 +40,7 @@ export default function AuthorsPostDetails({
               src={avatar}
               alt={avatar}
               className="rounded-full w-full h-full items-center"
+              loading="lazy"
             />
           </div>
           <div className="flex border lg:w-full lg:h-px lg:border-t"></div>

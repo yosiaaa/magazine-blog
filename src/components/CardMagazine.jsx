@@ -22,7 +22,12 @@ export default function CardMagazine({
         <span className="text-slate-600 text-base">{date}</span>
         <ButtonCustom type="button" label={category} />
       </div>
-      <img src={image} alt={titleMagazine} className="object-cover" />
+      <img
+        src={image}
+        alt={titleMagazine}
+        className="object-cover"
+        loading="lazy"
+      />
       <div className="flex flex-col gap-6 lg:gap-12.25">
         <div className="flex flex-col gap-3">
           <span className="text-3xl leading-none text-center font-semibold text-slate-900">

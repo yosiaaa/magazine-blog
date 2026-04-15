@@ -18,6 +18,7 @@ export default function CardArticle({
             src={image}
             alt={writer}
             className="w-full h-full object-cover object-top"
+            loading="lazy"
           />
         </div>
       </div>

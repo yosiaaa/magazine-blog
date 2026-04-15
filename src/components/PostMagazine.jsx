@@ -85,6 +85,7 @@ export default function PostMagazine({
           src={image}
           alt={title}
           className="object-cover w-full h-full justify-center"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-7 px-6 pb-7 py-12 lg:pt-24 lg:px-85 lg:pb-48 gap-auto justify-between">
@@ -95,6 +96,7 @@ export default function PostMagazine({
                 src={avatar}
                 alt={writer}
                 className="rounded-full items-center w-20 h-20"
+                loading="lazy"
               />
               <span className="text-3xl font-semibold text-slate-900 text-wrap">
                 {writer}

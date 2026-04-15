@@ -51,7 +51,12 @@ export default function PostPodcast({
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 pt-12 px-6 lg:pt-24 lg:px-40 lg:pb-24 justify-between">
         <div className="flex gap-5 lg:gap-16">
           <div className="flex flex-col gap-8">
-            <img src={image} alt={title} className="object-cover" />
+            <img
+              src={image}
+              alt={title}
+              className="object-cover"
+              loading="lazy"
+            />
 
             <div className="flex flex-col gap-7 lg:gap-12">
               <div className="flex justify-between">

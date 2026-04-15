@@ -13,9 +13,9 @@ const podcastCoverMap = {
 export default function Hero() {
   return (
     <div className="flex flex-col w-full px-6 pt-7 lg:pt-0 lg:px-20 pb-12 gap-12">
-      <h1 className="uppercase font-inter leading-none text-center font-bold text-4xl lg:text-[250px]">
+      <h2 className="uppercase font-inter leading-none text-center font-bold text-4xl lg:text-[250px]">
         Podcast
-      </h1>
+      </h2>
       {podcastData.map((item, i) => {
         return (
           <div className="flex flex-col">
