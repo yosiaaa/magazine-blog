@@ -70,6 +70,7 @@ export default function LeadArticle() {
             <img
               className="aspect-2/1 order-1 lg:order-last object-cover"
               src={hero}
+              loading="lazy"
               alt="Hero banner"
             />
           </div>
@@ -113,6 +114,7 @@ export default function LeadArticle() {
               <img
                 src={magazine_cover}
                 alt="Magazine Cover"
+                loading="lazy"
                 className="object-contain max-w-92.25 max-h-[461.25px]"
               />
               <button

@@ -22,6 +22,7 @@ export default function CardAuthor({
           src={image || coverArticle}
           alt={author}
           className="object-cover rounded-full"
+          loading="lazy"
         />
       </div>
       <div className="flex gap-4 flex-col justify-between">

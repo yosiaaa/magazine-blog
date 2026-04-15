@@ -9,7 +9,12 @@ export default function CardPodcast({ image, title, date, duration, id }) {
     >
       <div className="max-w-full mx-auto">
         <div className="aspect-square overflow-hidden">
-          <img src={image} alt={title} className="object-cover" />
+          <img
+            src={image}
+            alt={title}
+            className="object-cover"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="flex flex-col gap-7 lg:gap-12">
