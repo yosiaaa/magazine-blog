@@ -15,9 +15,9 @@ export default function CardAuthor({
   return (
     <div
       onClick={() => navigate(`/authors/${id}`)}
-      className="flex gap-7 lg:max-full lg:gap-12 p-5 lg:p-8 border items-center cursor-pointer hover:bg-[#f5f5f5] hover:transition-all hover:duration-500"
+      className="flex gap-7 lg:gap-12 p-5 lg:p-8 border items-center cursor-pointer hover:bg-[#f5f5f5] hover:transition-all hover:duration-500"
     >
-      <div className="flex w-20 h-20 lg:w-20 lg:h-20 justify-center lg:justify-normal items-center">
+      <div className="flex max-w-full max-h-full justify-center lg:justify-normal items-center">
         <img
           src={image || coverArticle}
           alt={author}

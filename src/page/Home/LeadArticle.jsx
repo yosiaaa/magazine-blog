@@ -76,8 +76,8 @@ export default function LeadArticle() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-7 px-6 lg:px-20 lg:gap-24 w-full">
-        <div className="flex flex-col md:flex-row md:justify-between gap-24">
+      <div className="flex flex-col gap-7 px-6 lg:px-20 lg:gap-24">
+        <div className="flex flex-col md:flex-row lg:justify-between gap-24">
           <div className="flex flex-col lg:flex gap-12 lg:justify-between items-center">
             {/* left section */}
             {article.map((item, i) => {

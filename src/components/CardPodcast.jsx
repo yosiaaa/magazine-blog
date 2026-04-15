@@ -5,9 +5,13 @@ export default function CardPodcast({ image, title, date, duration, id }) {
   return (
     <div
       onClick={() => navigate(`/podcast/${id}`)}
-      className="flex flex-col p-5 lg:p-12 gap-8 border hover:cursor-pointer hover:bg-[#f5f5f5] hover:delay-100 hover:transition-all"
+      className="flex flex-col gap-8 border p-5 lg:p-12 hover:cursor-pointer mb-7 lg:mb-0 hover:bg-[#f5f5f5] hover:delay-100 hover:transition-all"
     >
-      <img src={image} alt={title} className="object-cover" />
+      <div className="max-w-full mx-auto">
+        <div className="aspect-square overflow-hidden">
+          <img src={image} alt={title} className="object-cover" />
+        </div>
+      </div>
       <div className="flex flex-col gap-7 lg:gap-12">
         <p className="font-medium text-2xl lg:text-xl text-wrap">{title}</p>
         <div className="flex gap-4 justify-between lg:justify-normal">
