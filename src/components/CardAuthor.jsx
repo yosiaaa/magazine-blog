@@ -17,11 +17,11 @@ export default function CardAuthor({
       onClick={() => navigate(`/authors/${id}`)}
       className="flex gap-7 lg:gap-12 p-5 lg:p-8 border items-center cursor-pointer hover:bg-[#f5f5f5] hover:transition-all hover:duration-500"
     >
-      <div className="flex max-w-full max-h-full justify-center lg:justify-normal items-center">
+      <div className="w-20 h-20 md:w-37.5 md:h-37.5 lg:w-30 lg:h-30 object-cover rounded-full">
         <img
           src={image || coverArticle}
           alt={author}
-          className="object-cover rounded-full"
+          className="w-full h-full object-cover rounded-full"
           loading="lazy"
         />
       </div>
