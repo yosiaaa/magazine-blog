@@ -30,8 +30,8 @@ export default function CardAuthor({
         <span className="text-base text-wrap lg:text-xl font-bold">
           {author || title}
         </span>
-        <div className="flex justify-between gap-8">
-          <div className="flex gap-1  items-center">
+        <div className="flex flex-col md:flex-row justify-between gap-1 md:gap-8">
+          <div className="flex gap-5 items-center">
             <span className="font-semibold text-sm lg:text-base text-slate-900">
               Job
             </span>
@@ -39,7 +39,7 @@ export default function CardAuthor({
               {job || date}
             </span>
           </div>
-          <div className="flex gap-1 justify-between items-center">
+          <div className="flex gap-5 items-center">
             <span className="font-semibold text-sm lg:text-base text-slate-900">
               City
             </span>
