@@ -33,8 +33,8 @@ export default function AuthorsPostDetails({
 }) {
   return (
     <>
-      <div className="flex flex-col lg:flex-row pt-12 lg:pt-24 px-6 lg:px-60 pb-12 lg:pb-38 mx-auto gap-12 lg:gap-24 justify-center">
-        <div className="flex justify-between lg:justify-normal lg:flex-col gap-5">
+      <div className="flex flex-col lg:flex-row pt-12 lg:pt-24 px-6 pb-12 mx-auto gap-12 lg:gap-24 justify-center">
+        <div className="flex lg:justify-normal mx-auto md:mx-0 flex-col gap-5">
           <div className="flex overflow-hidden w-40 h-40">
             <img
               src={avatar}
@@ -44,11 +44,11 @@ export default function AuthorsPostDetails({
             />
           </div>
           <div className="flex border lg:w-full lg:h-px lg:border-t"></div>
-          <div className="flex flex-col lg:flex-row justify-center gap-8 lg:gap-0 lg:justify-between items-end lg:items-center">
+          <div className="flex flex-row gap-8 lg:gap-0 justify-between items-end lg:items-center">
             <span className="text-slate-900 font-semibold text-sm uppercase">
               Follow
             </span>
-            <div className="flex flex-col lg:flex-row gap-2 lg:gap-1">
+            <div className="flex flex-row gap-2 lg:gap-1">
               {socialMedia.map((item) => {
                 const Icon = socmedMap[item.icon];
                 if (!Icon) return null;

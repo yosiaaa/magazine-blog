@@ -11,8 +11,7 @@ export default function CardArticle({
 }) {
   return (
     <div className="flex flex-col lg:flex-row gap-5 md:gap-1 lg:gap-12">
-      {/* <div className="overflow-hidden max-w-lg max-h-lg lg:max-w-92.25 lg:max-h-[461.25px]"> */}
-      <div className="w-full max-w-sm mx-auto lg:max-w-full">
+      <div className="w-full mx-auto max-w-full">
         <div className="aspect-square overflow-hidden">
           <img
             src={image}
@@ -22,7 +21,6 @@ export default function CardArticle({
           />
         </div>
       </div>
-      {/* </div> */}
       <div className="flex flex-col gap-5 w-full lg:gap-0 justify-between">
         <div className="flex flex-col">
           <span className="text-slate-900 font-bold text-center lg:text-left text-2xl lg:text-xl">
